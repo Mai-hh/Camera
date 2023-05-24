@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:orientation="vertical"
+    android:padding="55dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CAE1FF"
+    tools:context=".MainActivity">
+
+
+
+
+    <Button
+        android:id="@+id/button_photo"
+        android:layout_width="300dp"
+        android:layout_height="130dp"
+        android:text="拍照"
+        android:textSize="30sp"
+
+        android:background="#FFF8DC"
+        android:drawablePadding="8dp"
+        android:padding="12dp"
+        tools:ignore="DuplicateIds,MissingConstraints"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="170dp" />
+
+    <Button
+        android:id="@+id/button_album"
+        android:layout_width="300dp"
+        android:layout_height="130dp"
+        android:text="相册"
+        android:textSize="30sp"
+        tools:ignore="MissingConstraints"
+        />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/button_album"/>
+
+    <ImageView
+        android:id="@+id/image_view1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
